@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container{
+    background-color: aqua;
+    margin: 100px;
+}
