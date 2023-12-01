@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const newItem = {
                 id: Date.now(),
                 name: inputValue.charAt(0).toUpperCase() + inputValue.slice(1),
-                createdDate: new Date().toLocaleString(),
                 completed: false
             };
 
@@ -91,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const listItem = document.createElement('div');
             listItem.innerHTML = `
                 <input type="checkbox" ${item.completed ? 'checked' : ''} data-id="${item.id}">
-                <span style="text-decoration: ${item.completed ? 'line-through' : 'none'}">${item.name} - ${item.createdDate}</span>
+                <span style="text-decoration: ${item.completed ? 'line-through' : 'none'}">${item.name}</span>
             `;
             listItem.addEventListener('change', toggleCompleted);
             valueContainer.appendChild(listItem);
@@ -119,4 +118,5 @@ document.addEventListener("DOMContentLoaded", function () {
     submitBtn.addEventListener('click', addItem);
     sortBtn.addEventListener('click', sortList);
 });
+
 
