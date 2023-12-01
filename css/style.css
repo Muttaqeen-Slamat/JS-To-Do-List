@@ -13,3 +13,37 @@ h1 {
     background-color: aqua;
     margin: 100px;
 }
+
+.flex{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.submitbtn{
+    padding: 4px;
+    background-color:rgb(86, 226, 81);
+    color: black;
+    font-size: medium;
+
+}
+
+.sortbtn{
+    padding: 4px;
+    background-color:rgb(86, 226, 81);
+    color: black;
+    font-size: medium;
+}
+
+.input{
+    padding: 4px;
+    text-align: center;
+}
+
+.value{
+    text-align: center;
+    background-color: aqua;
+    padding: 5px; 
+
+}
